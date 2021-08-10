@@ -60,15 +60,15 @@
         <h2>Califica tu experiencia</h2>
                 <form id="ContactForm" action="#" method="POST">
           <div>
-		     <div class="form-group">
+		     <div class="wrapper">
 		  	 	  <label for="Nombres">Nombres: </label>
-   				  <INPUT type="text"onkeypress="return Letr(event)" class="form-group" name="Nombres" required id="Nombres" maxlength="50" size="50" value="{{ request.form['Nombres'] }}"></input> <br/>
+   				  <INPUT type="text"onkeypress="return Letr(event)" class="input" name="Nombres" required id="Nombres" maxlength="50" size="50" value="{{ request.form['Nombres'] }}"></input> <br/>
              </div> 
-			<div class="form-group">
+			<div class="wrapper">
                  <label for="Apellidos">Apellidos:</label>
                  <INPUT type="text"onkeypress="return Letr(event)" class="input" name="Apellidos" required id="Apellidos" maxlength="50" size="50" value="{{ request.form['Apellidos'] }}"> </input> <br/>
    		  	</div>
-            <div class="form-group">
+            <div class="wrapper">
                 <label for="email">E-mail:</label> 
   				<INPUT type="email" class="input" name="Email" required id="email" value="{{ request.form['Email'] }}"><br/>
             </div>
@@ -79,7 +79,7 @@
               <br />
             </div>
             
-            <div class="form-group"> 
+            <div class="wrapper"> 
               <label for="Calificacion">Califica la experiencia del 1-5:</label>
               <INPUT type="number" class="input" name="Calificacion" required id="Calificacion" maxlength="2" size="50"value="{{ request.json['Calificacion'] }}"><br/>
 			</div>
